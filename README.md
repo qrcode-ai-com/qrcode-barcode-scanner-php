@@ -5,22 +5,27 @@ Read QR codes and barcodes from an image file in PHP. This package drives the in
 [QR Code & Barcode Scanner engine](https://github.com/qrcode-ai-com/qrcode-barcode-scanner)
 and returns its JSON report unchanged. It holds no decoder of its own.
 
-> **Not published yet.** This is the first version of the PHP route, checked in the engine
-> repository against the released `qrscan` 0.11.0. It is not on Packagist: `composer require`
-> does not find it today.
-
 | | QR codes | Barcodes |
 | --- | --- | --- |
 | **Try the scanner live** | [QR code scanner](https://qrcode-ai.com/en-US/qr-code-scanner) | [Barcode scanner](https://qrcode-ai.com/en-US/barcode-scanner) |
 | **PHP guide** | [QR code scanner for PHP](https://qrcode-ai.com/en-US/qr-code-scanner/sdk/php) | [Barcode scanner for PHP](https://qrcode-ai.com/en-US/barcode-scanner/sdk/php) |
 | **Create a code** | [QR code generator](https://qrcode-ai.com/en-US/qr-code-generator) | [Barcode generator](https://qrcode-ai.com/en-US/barcode-generator) |
 
+## Install
+
+```sh
+composer require qrcode-ai-com/qrcode-barcode-scanner:^0.11
+```
+
+The package follows the engine it drives: version 0.11.x of the package works with `qrscan`
+0.11.x. The first version is 0.11.0.
+
 ## What you need
 
 - PHP 8.2 or later, with `proc_open` enabled. Some shared hosts disable it: the package then
   throws `ProcessUnavailable`.
 - The `qrscan` command, version 0.11.x, installed separately. The
-  [distribution guide](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/blob/773a3b1e3fbed4ca244592bf56b36050e7e4447e/distribution/README.md) lists the routes: Homebrew, Scoop, the
+  [distribution guide](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/blob/173acc72f40077a41c2c8084d10c5c853dc79d8c/distribution/README.md) lists the routes: Homebrew, Scoop, the
   Debian and RPM packages, the AUR, `cargo install`, the release archives and the container
   image. This package never downloads it.
 
@@ -116,7 +121,7 @@ on Linux, macOS and Windows against the released command.
 Packagist reads `composer.json` at the root of a repository, and Composer downloads that whole
 repository. The package is therefore served from a small repository of its own,
 `qrcode-ai-com/qrcode-barcode-scanner-php`. Nothing there is edited by hand:
-[`scripts/stage-php-package.py`](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/blob/773a3b1e3fbed4ca244592bf56b36050e7e4447e/scripts/stage-php-package.py) writes its whole tree from
+[`scripts/stage-php-package.py`](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/blob/173acc72f40077a41c2c8084d10c5c853dc79d8c/scripts/stage-php-package.py) writes its whole tree from
 one commit of the engine repository, with the workflow of [`mirror/`](.github/workflows/), the two test
 images, the licence and a `SOURCE.json` that names the commit and the sha256 of every file. The
 same program checks that a tree is exactly that. Change the package here, then stage it again.
