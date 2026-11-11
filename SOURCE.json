@@ -1,0 +1,29 @@
+{
+  "schema": "qrscan-php-stage/1",
+  "engine": {
+    "repository": "https://github.com/qrcode-ai-com/qrcode-barcode-scanner",
+    "revision": "773a3b1e3fbed4ca244592bf56b36050e7e4447e"
+  },
+  "files": {
+    ".gitattributes": "9463159d54a9d6d9650c0e694364208fbf6f974f6e1450f6681d441323188b60",
+    ".github/workflows/tests.yml": "655a028a6c11b1177caa12ae8f5b8fee502f09df458a383ba14d054012b9b087",
+    ".gitignore": "2364b80a89a9d6a70a26bf59e16c0b0679ff387c806d9d934566c5ed5c6b4229",
+    "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "README.md": "b50ba7f78ff28cc0e56f33e6372aeaf566839f5d5479a8e36d48ccc2f117ca0d",
+    "composer.json": "6b54f2bbe264576b9c1503f1ee9d95aac6d3e82e43f4c8b65438552bed1a0530",
+    "composer.lock": "013e0b9ea0e79e60e263e7eab491002b6a8d43fe9a91be31580d15422e596c8c",
+    "phpunit.xml.dist": "921fe5947b205d81bbd0270b4d456b3bd2a9bb79fb7d52b2437c06bc43e5d3c0",
+    "src/Exception/BinaryNotFound.php": "256505813fed0b28a75093255ad3b85858f86e4844f4817e99d71f1374f5b769",
+    "src/Exception/ProcessUnavailable.php": "8d6c441bb9fba486d5d84ce8b71f23f3c9a98b6505b38c94a6b3d32b56ec0c74",
+    "src/Exception/ScanFailed.php": "e75787dfa211a0b36c514cc09d6ef3f972b629372a7dfaf196ca296db7f6f0de",
+    "src/Exception/ScanTimedOut.php": "c27ff9d78ec472cedc32ac8d42dc7e5435aa567b5b7b779fc00a39c50c2e85c1",
+    "src/Exception/ScannerException.php": "63aae6ac18bcdfcd9aa42a26979d9cc04a4cf197f7078900131720fb253afca7",
+    "src/Exception/UnsupportedVersion.php": "7e01d1f69d9a18f3a58c7e5ebe80a1295249d2de25f0c1511bc4869a3e6a182d",
+    "src/Profile.php": "17cd13e0cdc4c6267d600c7cfced4baa59cd66eee7b7a8b6f2ab3b24ae020c01",
+    "src/Report.php": "3527116e35dba7cd3fb248a2801f492c12087b863b051f1b6071fa4001234110",
+    "src/Scanner.php": "d9747a02b99e5972f05d0e8049b80b7406e425ddfe56fa894207c2ca39dfcedb",
+    "tests/ScannerTest.php": "262d4875788f27b17958402ab3fe906af8ffd1684bbc017def3b303588b3e032",
+    "tests/fixtures/clean/gen_v5_q.png": "1dc399cad19623a145b20251cf1c0da42ea4f54fd79871a4dd796c9554822dd6",
+    "tests/fixtures/symbology/mixed-code128-qr.png": "c636e8d56df483ff1ec06dbe9b5bcba226c579f8fc1c3d10c4ccf4e100762ec8"
+  }
+}
