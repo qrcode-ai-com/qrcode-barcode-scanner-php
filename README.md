@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qrcode-ai-com/.github/main/profile/assets/banner-php-dark.gif?v=7e4f537dc2bc">
+      <img src="https://raw.githubusercontent.com/qrcode-ai-com/.github/main/profile/assets/banner-php-light.gif?v=6a86ec5cd714" alt="QR Code &amp; Barcode Scanner for PHP: the PHP logo, the quick start in PHP, and a QR code and a barcode being read" width="100%">
+    </picture>
+  </a>
+</p>
+
 # QR Code & Barcode Scanner for PHP
 
 <!-- qrcode-ai-readme-actions:v2 -->
@@ -28,15 +37,6 @@ Help me understand QR Code & Barcode Scanner for PHP (bindings/php/README.md) fo
 </details>
 
 <!-- /qrcode-ai-readme-actions:v2 -->
-
-<p align="center">
-  <a href="https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qrcode-ai-com/.github/main/profile/assets/banner-php-dark.gif?v=7e4f537dc2bc">
-      <img src="https://raw.githubusercontent.com/qrcode-ai-com/.github/main/profile/assets/banner-php-light.gif?v=6a86ec5cd714" alt="QR Code &amp; Barcode Scanner for PHP: the PHP logo, the quick start in PHP, and a QR code and a barcode being read" width="100%">
-    </picture>
-  </a>
-</p>
 
 Use this command adapter when a PHP application can invoke a separately installed qrscan executable. It keeps the scanner out of the PHP process and returns the original report, leaving storage and business decisions to your application. The public source and tag do not by themselves establish Packagist availability; verify the registry before relying on the Composer command below.
 
@@ -72,7 +72,7 @@ The package follows the engine it drives: version 0.11.x of the package works wi
 - PHP 8.2 or later, with `proc_open` enabled. Some shared hosts disable it: the package then
   throws `ProcessUnavailable`.
 - The `qrscan` command, version 0.11.x, installed separately. The
-  [distribution guide](https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust/blob/9fac51a96029d1816fa80ad62925b1dca21f3610/distribution/README.md) lists the routes: Homebrew, Scoop, the
+  [distribution guide](https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust/blob/27dd731c23302e25f90eb2f1ab66e7d3aa93cdc5/distribution/README.md) lists the routes: Homebrew, Scoop, the
   Debian and RPM packages, the AUR, `cargo install`, the release archives and the container
   image. This package never downloads it.
 
@@ -231,7 +231,7 @@ each one starts `qrscan` and hands you its report.
 Packagist reads `composer.json` at the root of a repository, and Composer downloads that whole
 repository. The package is therefore served from a small repository of its own,
 `qrcode-ai-com/qrcode-barcode-scanner-php`. Nothing there is edited by hand:
-[`scripts/stage-php-package.py`](https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust/blob/9fac51a96029d1816fa80ad62925b1dca21f3610/scripts/stage-php-package.py) writes its whole tree from
+[`scripts/stage-php-package.py`](https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust/blob/27dd731c23302e25f90eb2f1ab66e7d3aa93cdc5/scripts/stage-php-package.py) writes its whole tree from
 one commit of the engine repository, with the workflow of [`mirror/`](.github/workflows/), the two test
 images, the licence and a `SOURCE.json` that names the commit and the sha256 of every file. The
 same program checks that a tree is exactly that. Change the package here, then stage it again.
