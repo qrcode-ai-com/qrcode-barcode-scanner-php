@@ -2,14 +2,14 @@
   "schema": "qrscan-php-stage/1",
   "engine": {
     "repository": "https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust",
-    "revision": "27dd731c23302e25f90eb2f1ab66e7d3aa93cdc5"
+    "revision": "5a924a1109f8e6739d9e95830be276d14ea3bd79"
   },
   "files": {
     ".gitattributes": "9463159d54a9d6d9650c0e694364208fbf6f974f6e1450f6681d441323188b60",
     ".github/workflows/tests.yml": "655a028a6c11b1177caa12ae8f5b8fee502f09df458a383ba14d054012b9b087",
     ".gitignore": "2364b80a89a9d6a70a26bf59e16c0b0679ff387c806d9d934566c5ed5c6b4229",
     "LICENSE": "f4d433b564117e27b6aaf8f2902f2200368f57bb2d8286129c2f1774c000295a",
-    "README.md": "4aa45dc375dbd03270981b5480ceb02b7cf7469dde28e932d8df299a62d8c843",
+    "README.md": "52dd8c70dc41f26ad2be082d6ada3028d0453df0953335b276a6c03b22934dff",
     "composer.json": "b35d3e1fd836b1e066d25b2a7205744f6e5ee6397ff2877742841d3c5c3cf274",
     "composer.lock": "013e0b9ea0e79e60e263e7eab491002b6a8d43fe9a91be31580d15422e596c8c",
     "phpunit.xml.dist": "921fe5947b205d81bbd0270b4d456b3bd2a9bb79fb7d52b2437c06bc43e5d3c0",
