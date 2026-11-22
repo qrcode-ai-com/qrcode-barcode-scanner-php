@@ -69,7 +69,7 @@ final class ScannerTest extends TestCase
         self::assertSame(0, $report->exitCode);
         self::assertTrue($report->found());
         self::assertTrue($report->isComplete());
-        self::assertSame('0.11.0', $report->engineVersion());
+        self::assertSame('0.12.0', $report->engineVersion());
         $bySymbology = [];
         foreach ($report->detections() as $index => $row) {
             $bySymbology[$row['symbology']] = [$report->texts()[$index], $report->rawPayloads()[$index]];
@@ -95,7 +95,7 @@ final class ScannerTest extends TestCase
 
         self::assertSame(['https://qrcode-ai.com/c/v5q'], $report->texts());
         self::assertSame(100, $report->score()['value']);
-        self::assertSame(['scanner' => '0.11.0', 'pipeline' => 5, 'score_contract' => 5], $report->data['versions']);
+        self::assertSame(['scanner' => '0.12.0', 'pipeline' => 5, 'score_contract' => 5], $report->data['versions']);
     }
 
     public function testTheReportIsTheEnginesOwnJson(): void
@@ -224,7 +224,7 @@ final class ScannerTest extends TestCase
     {
         $scanner = new Scanner(self::$binary);
 
-        self::assertSame('0.11.0', $scanner->engineVersion());
+        self::assertSame('0.12.0', $scanner->engineVersion());
         self::assertContains('qr_code', $scanner->capabilities()['symbologies']);
         self::assertContains('code128', $scanner->capabilities()['symbologies']);
     }
