@@ -2,14 +2,14 @@
   "schema": "qrscan-php-stage/1",
   "engine": {
     "repository": "https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust",
-    "revision": "9b500a803039c27330f0a35a1fcf6fdf7d9f93e9"
+    "revision": "fc7a18a401f2e0cf913a73e4391c519bb13dd82e"
   },
   "files": {
     ".gitattributes": "9463159d54a9d6d9650c0e694364208fbf6f974f6e1450f6681d441323188b60",
-    ".github/workflows/tests.yml": "655a028a6c11b1177caa12ae8f5b8fee502f09df458a383ba14d054012b9b087",
+    ".github/workflows/tests.yml": "bc496273bff5109e437f321f60633c00fc333ea840f013523c6258af54552b3a",
     ".gitignore": "2364b80a89a9d6a70a26bf59e16c0b0679ff387c806d9d934566c5ed5c6b4229",
     "LICENSE": "f4d433b564117e27b6aaf8f2902f2200368f57bb2d8286129c2f1774c000295a",
-    "README.md": "e7d06b8a7a67f262114003d3df750a1901c8f633146ade545de0ba035f3158d4",
+    "README.md": "207120351299ea87dc6d5215d63c040c3193a7e6988d3da7aebd3dc08294c307",
     "composer.json": "b35d3e1fd836b1e066d25b2a7205744f6e5ee6397ff2877742841d3c5c3cf274",
     "composer.lock": "013e0b9ea0e79e60e263e7eab491002b6a8d43fe9a91be31580d15422e596c8c",
     "phpunit.xml.dist": "921fe5947b205d81bbd0270b4d456b3bd2a9bb79fb7d52b2437c06bc43e5d3c0",
@@ -21,8 +21,8 @@
     "src/Exception/UnsupportedVersion.php": "840eb1fda5b4c42fe1d37b174448d92d17d35774b604f6440751d5b3438a4027",
     "src/Profile.php": "4298c17e221c518b00887549f4e93255e8fbaffb36d67ccf831a7076e56484a8",
     "src/Report.php": "5067d6987e407958d8dcad0fd2055018ad0f1972af011676b97f13d0ff67fae0",
-    "src/Scanner.php": "48405d68ee652195a69ee79658d4546404600826d4a936742f332473950cb9f9",
-    "tests/ScannerTest.php": "5a23fb93b647116e81f45e9a47df4cba28217d40aae98fc77449096622330490",
+    "src/Scanner.php": "e25dc2788d4fad03fb0be9e9ff8a4e18f8b42bbe51de7d34980d6a7c77fb7129",
+    "tests/ScannerTest.php": "f4696d9be1c0edd10fffa586ded7eedb4582ac923c5086cc7b8dbb08e2109145",
     "tests/fixtures/clean/gen_v5_q.png": "1dc399cad19623a145b20251cf1c0da42ea4f54fd79871a4dd796c9554822dd6",
     "tests/fixtures/symbology/mixed-code128-qr.png": "c636e8d56df483ff1ec06dbe9b5bcba226c579f8fc1c3d10c4ccf4e100762ec8"
   }

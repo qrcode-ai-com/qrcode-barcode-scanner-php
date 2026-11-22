@@ -23,8 +23,8 @@ use QrcodeAi\BarcodeScanner\Exception\UnsupportedVersion;
  */
 final class Scanner
 {
-    /** The engine line this package was checked against: every 0.11.x. */
-    public const SUPPORTED_ENGINE = '0.11';
+    /** The engine line this package was checked against: every 0.12.x. */
+    public const SUPPORTED_ENGINE = '0.12';
 
     /** @var array<string, mixed>|null what `qrscan --capabilities` answered, read once */
     private ?array $capabilities = null;
